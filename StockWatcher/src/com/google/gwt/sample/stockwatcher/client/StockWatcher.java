@@ -41,6 +41,10 @@ public class StockWatcher implements EntryPoint {
     stocksFlexTable.setText(0, 1, "Price");
     stocksFlexTable.setText(0, 2, "Change");
     stocksFlexTable.setText(0, 3, "Remove");
+    
+    stocksFlexTable.getRowFormatter().addStyleName(0, "watchListHeader");
+    stocksFlexTable.addStyleName("watchList");
+
 
     // Assemble Add Stock panel.
     addPanel.add(newSymbolTextBox);
